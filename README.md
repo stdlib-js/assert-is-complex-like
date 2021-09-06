@@ -116,6 +116,24 @@ out = isComplexLike( null );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/is-complex`][@stdlib/assert/is-complex]: test if a value is a 64-bit or 128-bit complex number.
+-   [`@stdlib/assert/is-complex64`][@stdlib/assert/is-complex64]: test if a value is a 64-bit complex number.
+-   [`@stdlib/assert/is-complex128`][@stdlib/assert/is-complex128]: test if a value is a 128-bit complex number.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -170,6 +188,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-complex-like/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex
+
+[@stdlib/assert/is-complex64]: https://github.com/stdlib-js/assert-is-complex64
+
+[@stdlib/assert/is-complex128]: https://github.com/stdlib-js/assert-is-complex128
+
+<!-- </related-links> -->
 
 </section>
 
