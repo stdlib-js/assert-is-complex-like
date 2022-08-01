@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is a complex number-like object.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-complex-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@esm/index.mjs';
+var isComplexLike = require( '@stdlib/assert-is-complex-like' );
 ```
 
 #### isComplexLike( value )
@@ -39,8 +55,8 @@ import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-compl
 Tests if a value is a complex number-like `object`.
 
 ```javascript
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@esm/index.mjs';
+var Complex128 = require( '@stdlib/complex-float64' );
+var Complex64 = require( '@stdlib/complex-float32' );
 
 var x = new Complex128( 1.0, 3.0 );
 var bool = isComplexLike( x );
@@ -83,15 +99,10 @@ bool = isComplexLike( x );
 
 <!-- eslint-disable object-curly-newline, object-property-newline -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@esm/index.mjs';
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
-import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@esm/index.mjs';
+```javascript
+var Complex64 = require( '@stdlib/complex-float32' );
+var Complex128 = require( '@stdlib/complex-float64' );
+var isComplexLike = require( '@stdlib/assert-is-complex-like' );
 
 var out = isComplexLike( new Complex64( 2.0, 2.0 ) );
 // returns true
@@ -107,10 +118,6 @@ out = isComplexLike( {} );
 
 out = isComplexLike( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -142,7 +149,7 @@ out = isComplexLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -204,11 +211,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex/tree/esm
+[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex
 
-[@stdlib/assert/is-complex64]: https://github.com/stdlib-js/assert-is-complex64/tree/esm
+[@stdlib/assert/is-complex64]: https://github.com/stdlib-js/assert-is-complex64
 
-[@stdlib/assert/is-complex128]: https://github.com/stdlib-js/assert-is-complex128/tree/esm
+[@stdlib/assert/is-complex128]: https://github.com/stdlib-js/assert-is-complex128
 
 <!-- </related-links> -->
 
