@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ComplexLike } from '@stdlib/types/object';
 
 /**
-* Test if a value is a complex number-like object.
+* Tests if a value is a complex number-like object.
 *
-* @module @stdlib/assert-is-complex-like
+* @param value - value to test
+* @returns boolean indicating if a value is a complex number-like object.
 *
 * @example
-* var Complex128 = require( '@stdlib/complex-float64' );
-* var Complex64 = require( '@stdlib/complex-float32' );
-* var isComplexLike = require( '@stdlib/assert-is-complex-like' );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var Complex64 = require( `@stdlib/complex/float32` );
 *
 * var x = new Complex128( 4.0, 2.0 );
 * var bool = isComplexLike( x );
@@ -36,12 +40,9 @@
 * bool = isComplexLike( x );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function isComplexLike( value: any ): value is ComplexLike;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = isComplexLike;
