@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@deno/mod.js';
+import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@v0.1.1-deno/mod.js';
 ```
 
 #### isComplexLike( value )
@@ -97,7 +97,7 @@ bool = isComplexLike( x );
 ```javascript
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@deno/mod.js';
+import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@v0.1.1-deno/mod.js';
 
 var out = isComplexLike( new Complex64( 2.0, 2.0 ) );
 // returns true
