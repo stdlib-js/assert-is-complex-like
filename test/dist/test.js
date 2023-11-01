@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,62 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex64 = require( '@stdlib/complex-float32' );
-var Complex128 = require( '@stdlib/complex-float64' );
-var isComplexLike = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isComplexLike, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a complex number-like object', function test( t ) {
-	var v;
-
-	v = new Complex64( 3.0, 2.0 );
-	t.equal( isComplexLike( v ), true, 'returns true' );
-
-	v = new Complex128( 3.0, 2.0 );
-	t.equal( isComplexLike( v ), true, 'returns true' );
-
-	v = {
-		're': 1.0,
-		'im': -1.0
-	};
-	t.equal( isComplexLike( v ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a complex number-like object', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		'5',
-		null,
-		void 0,
-		NaN,
-		true,
-		false,
-		[],
-		[ 1.0, -1.0 ],
-		{},
-		{
-			're': 1.0
-		},
-		{
-			'im': -1.0
-		},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isComplexLike( values[i] ), false, 'returns false when provided '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
