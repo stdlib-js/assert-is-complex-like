@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-complex-like",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Test if a value is a complex number-like object.",
   "license": "Apache-2.0",
   "author": {
@@ -37,12 +37,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float32-ctor": "github:stdlib-js/complex-float32-ctor#main",
-    "@stdlib/complex-float64-ctor": "github:stdlib-js/complex-float64-ctor#main",
+    "@stdlib/complex-float32-ctor": "^0.0.2",
+    "@stdlib/complex-float64-ctor": "^0.0.2",
     "@stdlib/types": "^0.3.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.1",
+    "@stdlib/assert-is-boolean": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
