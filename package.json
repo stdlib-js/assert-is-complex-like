@@ -39,7 +39,7 @@
   "dependencies": {
     "@stdlib/complex-float32-ctor": "^0.0.2",
     "@stdlib/complex-float64-ctor": "^0.0.3",
-    "@stdlib/types": "^0.3.2"
+    "@stdlib/types": "^0.4.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
