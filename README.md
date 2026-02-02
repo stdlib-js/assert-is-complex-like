@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-complex-like/tags). For example,
+
+```javascript
 import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@v0.2.3-deno/mod.js';
 ```
 
@@ -97,7 +102,7 @@ bool = isComplexLike( x );
 ```javascript
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@deno/mod.js';
-import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@v0.2.3-deno/mod.js';
+import isComplexLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-like@deno/mod.js';
 
 var out = isComplexLike( new Complex64( 2.0, 2.0 ) );
 // returns true
